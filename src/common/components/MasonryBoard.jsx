@@ -28,7 +28,7 @@ class MasonryBoard extends React.Component {
                     hasMore={this.state.hasMore}
                     pageStart={1}
                     style={{ backgroundColor: "#000", margin: '10px auto' }}
-                    loader={(<div>loading...</div>)}
+                    loader={(<div key={1}>loading...</div>)}
                     sizes={mqArr}
                     loadMore={page => {
                         console.log(page);
