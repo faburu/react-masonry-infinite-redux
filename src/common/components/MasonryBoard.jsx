@@ -40,6 +40,7 @@ class MasonryBoard extends React.Component {
                     {
                         this.props.cards.map((card, i) =>
                             <div
+                                key={i}
                                 style={{
                                     width: card.width,
                                     height: card.height,
@@ -47,8 +48,7 @@ class MasonryBoard extends React.Component {
                                     padding: '10px',
                                     boxSizing: 'border-box'
                                 }}
-                                key={i + 1}
-                            >{i}</div>
+                            >{i + 1}</div>
                         )
                     }
                 </MasonryInfiniteScroller>
