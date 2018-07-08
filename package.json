@@ -3,8 +3,11 @@
   "version": "2.0.0-alpha.11",
   "license": "MIT",
   "scripts": {
-    "start": "set PORT=3009 && set DEBUG=*,-babel*,-esl*,-express* && razzle start",
-    "build": "PORT=3009 && razzle build",
+    "start": "razzle start",
+    "_start": "set PORT=3210 && set DEBUG=*,-babel*,-esl*,-express* && razzle start",
+    "build": "razzle build",
+    "_build": "PORT=3210 && razzle build",
+    "_build:win": "set PORT=3210 && razzle build",
     "test": "razzle test --env=jsdom",
     "start:prod": "NODE_ENV=production node build/server.js"
   },
