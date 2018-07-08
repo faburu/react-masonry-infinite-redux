@@ -5,7 +5,7 @@ There are features not needed for this demo, but I use this as a template
 
 It uses/features;
 * Razzle for server-side rendering
-* A fake API card generator
+* An async card generator to simulate API
 * `react-masonry-infinite`
 * Demonstrates use `react-router` with `redux`
 * Prevent infinite async issues using an infinite scroller
