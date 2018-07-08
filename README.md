@@ -10,3 +10,10 @@ It uses/features;
 * Demonstrates use `react-router` with `redux`
 * Prevent infinite async issues using an infinite scroller
 * Caching by the awesome `react-component-caching`; brought render from >4s to ~500ms in a couple of lines of code (in another SSR project).
+
+
+## ToDo
+[] click to delete
+[] set number of tiles (currently 95)
+[] demonstrate caching with header component
+[] problem with keys in infinite scroller?
