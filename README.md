@@ -13,7 +13,7 @@ It uses/features;
 
 
 ## ToDo
-[] click to delete
-[] set number of tiles (currently 95)
-[] demonstrate caching with header component
-[] problem with keys in infinite scroller?
+- [] click to delete
+- [] set number of tiles (currently 95)
+- [] demonstrate caching with header component
+- [] problem with keys in infinite scroller?
