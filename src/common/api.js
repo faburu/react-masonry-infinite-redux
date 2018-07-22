@@ -5,8 +5,8 @@ export default page => {
         if (!page) page = 1;
         const heightDiff = defaultState.masonryBoard.cardMaxHeight - defaultState.masonryBoard.cardMinHeight;
         const cardHeight = () => Math.floor(Math.random() * heightDiff) + defaultState.masonryBoard.cardMinHeight;
-        const hasMore = defaultState.api.totalRecords - (defaultState.api.skip * page);
-        const records = Math.min(defaultState.api.skip, defaultState.api.skip + hasMore);
+        const moreCount = defaultState.api.totalRecords - (defaultState.api.skip * page);
+        const records = Math.min(defaultState.api.skip, defaultState.api.skip + moreCount);
 
         let cards = []
         if (records > 0) for (var i = 0; i < records; i++) {
@@ -17,7 +17,7 @@ export default page => {
             })
         }
 
-        setTimeout(() => resolve({ cards, hasMore, records, page }), defaultState.api.responseTime);
+        setTimeout(() => resolve({ cards, moreCount, records, page }), defaultState.api.responseTime);
     });
 }
 

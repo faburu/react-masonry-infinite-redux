@@ -16,7 +16,7 @@ module.exports = {
         cardMinHeight: 200,
         cardMaxHeight: 400
     },
-    hasMore: false,
+    hasMore: true,
     api: {
         totalRecords: 95,
         responseTime: 1000,

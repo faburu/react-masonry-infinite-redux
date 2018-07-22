@@ -1,7 +1,9 @@
-import { ADD_ANIMAL, ADD_CARDS } from '../constants';
+import { ADD_ANIMAL, ADD_CARDS, SCROLLER } from '../constants';
 
 const onlyReducer = (state, action) => {
     switch (action.type) {
+        case SCROLLER:
+            return { ...state, hasMore: action.payload };
         case ADD_CARDS:
             return {
                 // previous state
