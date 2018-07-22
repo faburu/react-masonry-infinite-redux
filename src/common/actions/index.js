@@ -11,4 +11,6 @@ const fetchCards = page => async (dispatch, getState) => {
     })
 }
 
+const inifiniteSwitch = canContinue => ({ type: SCROLLER, payload: canContinue });
+
 export { addAnimal, fetchCards }
